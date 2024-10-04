@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            /* background-color: #193d6d; */
+            display: flex;
+
+            >nav {
+                width: 400px;
+                height: 100vh;
+                background-color: #101e33;
+                padding-top: 30px;
+                position: relative;
+                transition: 1s;
+                overflow: hidden;
+                display: flex;
+                flex-wrap: wrap;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                scrollbar-width: thin;
+                scrollbar-color: #7d84ab58 #0c1e35;
+
+                >div {
+                    /* border: 1px solid red; */
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 8px;
+                    background-color: #ff8100;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 15px;
+                    margin-bottom: 50px;
+                }
+
+                >h5 {
+                    width: 150px;
+                    /* border: 1px solid red; */
+                    margin-block-start: 5px;
+                    font-size: 20px;
+                    margin-left: 32px;
+                    font-weight: bold;
+                    padding: 2px;
+                    color: rgba(255, 255, 255, 0.475);
+                }
+
+                >i {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: #00829f;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 43px;
+                    right: 15px;
+                    transition: 1s;
+                    box-shadow: 1px 1px 4px #0c1e35;
+                    transform: translateX(50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                >ul {
+                    width: 100%;
+                    height: 550px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* border: 1px solid red; */
+                    margin-bottom: 150px;
+
+                    >li {
+                        list-style-type: none;
+                        width: 100%;
+                        min-height: 20px;
+                        /* border: 1px solid rgba(255, 255, 255, 0.478); */
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: rgba(255, 255, 255, 0.41);
+
+                        &:hover {
+                            color: white;
+                        }
+
+                        >span {
+                            width: 80px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            /* height: 20px; */
+                            padding: 20px;
+                        }
+
+                        >h2 {
+                            font-size: 15px;
+                            width: 100px;
+                            display: flex;
+                            align-items: center;
+                            /* border: 1px solid red; */
+
+                        }
+                        
+
+                        >i {
+                            width: 80px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 20px;
+                            font-size: 15px;
+                        }
+                    
+
+
+                        >ul {
+                            width: 100%;
+                            /* border: 1px solid red; */
+                            display: flex;
+                            flex-wrap: wrap;
+                            list-style: none;
+                            overflow: hidden;
+                            transition: 1s;
+
+                            >li {
+                                width: 100%;
+                                height: 40px;
+                                /* border: 1px solid hotpink; */
+                                display: flex;
+                                align-items: center;
+                                text-transform: capitalize;
+                                font-size: 15px;
+                                background-color: #0f1b2e;
+                                padding-left: 40px;
+                            }
+                        }
+
+
+                        >h3 {
+                            background-color: #ab2dff;
+                            font-size: 15px;
+                            padding: 3px;
+                            border-radius: 4px;
+                            font-weight: bold;
+                            color: white;
+                            margin-left: 40px;
+                        }
+
+                        >h4 {
+                            background-color: #079b0b;
+                            border-radius: 10px;
+                            padding: 5px;
+                            font-size: 13px;
+                            color: white;
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+
+            .rtl {
+                width: 80%;
+                height: 100vh;
+
+                /* border: 1px solid red; */
+                >h1 {
+                    /* border: 5px solid red; */
+                    margin-top: 30px;
+                    margin-left: 30px;
+                    width: 300px;
+                    font-weight: bold;
+                    font-size: 50px;
+                    color: #020d1d;
+                }
+
+                >p {
+                    /* border: 5px solid red; */
+                    width: 800px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 30px;
+                    margin: 30px;
+                    color: #020d1d;
+
+                    >a {
+                        display: flex;
+                        width: 150px;
+                        /* border: 1px solid red; */
+                        margin-left: 10px;
+                        text-decoration: none;
+                        color: #00829f;
+                    }
+                }
+
+                >h2 {
+                    /* border: 5px solid red; */
+                    width: 300px;
+                    font-weight: bold;
+                    font-size: 50px;
+                    color: #020d1d;
+                    margin-left: 30px;
+                }
+
+                >ul {
+                    width: 200px;
+                    /* border: 1px solid red; */
+                    margin-left: 60px;
+
+                    >li {
+                        font-size: 20px;
+                        padding: 10px;
+                        color: #020d1d;
+                    }
+                }
+
+                >.resource {
+                    margin-top: 30px;
+                }
+
+                >.me {
+                    width: 600px;
+                    /* border: 1px solid gray; */
+                    margin-left: 20%;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+
+                    >.zahra {
+                        width: 200px;
+                        color: #ff8100;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+            
+        }
+        .box {
+                width: 150px;
+                height: 150px;
+                position: fixed;
+                right: 20px;
+                bottom: 20px;
+
+                >div {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+
+                    &:first-of-type {
+                        background-color: rgb(193, 150, 233);
+                        border-radius: 80% 20% 56% 44% / 46% 50% 50% 54%;
+                    }
+
+                    &:last-of-type {
+                        background-image: url(asset/img/IMG_20231201_085614.jpg);
+                        background-size: cover;
+                        border-radius: 19% 81% 20% 80% / 76% 24% 76% 24%;
+                        animation: anime1 infinite alternate 2s;
+                    }
+                }
+            }
+
+            @keyframes anime1 {
+                to {
+                    border-radius: 80% 20% 56% 44% / 46% 50% 50% 54%;
+                }
+
+            }
+
+
+
+
+
+        .w {
+            width: 150px;
+            span{
+                font-size: 30px;
+                font-weight: bold;
+                /* border: 1px solid gray; */
+                margin:-30px 0;
+         
+            }
+            h5 {
+                opacity: 0;
+            }
+
+            h3 {
+                opacity: 0;
+            }
+
+            h4 {
+                opacity: 0;
+            }
+
+
+        }
+
+        .rotate {
+            transform: rotateY(180deg);
+        }
+
+
+
+        .ul-w {
+            h2 {
+                opacity: 0;
+            }
+
+            i {
+                opacity: 0;
+            }
+            li{
+                &:nth-of-type(7){
+                    margin-top: 20px;
+                }
+            }
+            ul{
+                margin-top: -50px;
+                margin-bottom: 20px;
+            }
+        }
+     
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div>P</div>
+            <h5>Pro Sidebar</h5>
+            <i class="bi bi-arrow-left-short"></i>
+
+
+            <!-- /////menu////// -->
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined">
+                        diamond
+                    </span>
+                    <h2>Components</h2>
+                    <i class="bi bi-chevron-right"></i>
+                    <ul>
+                        <li>grid </li>
+                        <li>layot </li>
+                        <li>forms </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        equalizer
+                    </span>
+                    <h2>Charts</h2>
+                    <i class="bi bi-chevron-right"></i>
+                    <ul>
+                        <li>pie chart </li>
+                        <li>line chart </li>
+                        <li>bar chart </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <h2>E-commerce</h2>
+                    <i class="bi bi-chevron-right"></i>
+                    <ul>
+                        <li>products </li>
+                        <li>orders </li>
+                        <li>credit card </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        public
+                    </span>
+                    <h2>Maps</h2>
+                    <i class="bi bi-chevron-right"></i>
+                    <ul>
+                        <li>google maps </li>
+                        <li>open street map </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        palette
+                    </span>
+                    <h2>Theme</h2>
+                    <i class="bi bi-chevron-right"></i>
+                    <ul>
+                        <li>dark</li>
+                        <li>light</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        book_2
+                    </span>
+                    <h2>Documentation</h2>
+                    <h4>Beta</h4>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        calendar_today
+                    </span>
+                    <h2>Calendar</h2>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        settings_heart
+                    </span>
+                    <h2>MoreExamples</h2>
+                    <h3>Hot</h3>
+                </li>
+            </ul>
+        </nav>
+        <!-- ///////////////end nav/////////// -->
+
+        <div class="rtl">
+            <h1>Pro Sidebar</h1>
+            <p> advanced sidebar menu built with Html and CSS and Javascript</p>
+            <p>Full Code and documentation available on
+                <a href="https://github.com/zahrakrmi">GitHub</a>
+            </p>
+            <h2>Features</h2>
+            <ul>
+                <li>Collapsable sidebar</li>
+                <li>Multi level menu</li>
+                <li>Customizable</li>
+            </ul>
+            <h2 class="resource">Resources</h2>
+            <ul>
+                <li>Css Pro Layout</li>
+                <li>w3schools</li>
+                <li>google icon</li>
+            </ul>
+            <p class="me">© 2024 Code with ❤️ by
+                <a href="https://www.linkedin.com/in/zahra-karami-7643ba231/" class="zahra">zahra karami</a>
+            </p>
+        </div>
+    </section>
+
+
+       <div class="box">
+            <div></div>
+            <div></div>
+        </div>
+</body>
+<script>
+    const toggleMenu = document.querySelector('nav>i')
+    const nav = document.querySelector('nav')
+    const ul = document.querySelector('ul')
+    const subMenu = document.querySelectorAll('nav>ul>li>ul')
+    const li = document.querySelectorAll('nav>ul>li')
+
+
+    toggleMenu.addEventListener('click', (e) => {
+        e.target.classList.toggle('rotate')
+        ul.classList.toggle('ul-w')
+        nav.classList.toggle('w')
+    })
+
+
+    //////subMenu//////////
+
+    ////start gerftan h li ha/////
+    subMenu.forEach((val) => {
+        val.setAttribute('data-h', val.clientHeight)
+        val.style.height = '0'
+    })
+
+    ////////click li/////////
+    li.forEach((val, i) => {
+        val.addEventListener('click', () => {
+            console.log(val.children[3]);
+            if (val.children[3] != undefined) {
+                subMenu.forEach((item, index) => {
+                    if (index != i) {
+                        item.style.height = '0'
+                    } else {
+                        let myHeight = val.children[3].clientHeight
+                        console.log(myHeight);
+                        if (myHeight == 0) {
+                            val.children[3].style.height = val.children[3].getAttribute('data-h') + 'px'
+                        } else {
+                            val.children[3].style.height = '0px'
+                        }
+                    }
+                })
+            }
+        })
+    })
+
+</script>
+
+</html>
